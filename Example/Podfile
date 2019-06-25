@@ -1,0 +1,15 @@
+source 'https://github.com/Tovema-iOS/Specs.git'
+
+platform :ios, '8.0'
+#use_frameworks!
+
+target 'FLInterface_Example' do
+    pod "TMInterface", :path => "../"
+    pod "TMInterface/NetwrokType", :path => "../"
+
+    pod "YYModel", :inhibit_warnings => true
+
+    target 'FLInterface_Tests' do
+        inherit! :search_paths
+    end
+end
